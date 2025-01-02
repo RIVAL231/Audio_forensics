@@ -15,7 +15,7 @@ export default function Analytics() {
     formData.append('file', file)
 
     try {
-      const response = await fetch('https://16.171.249.240/predict/', {
+      const response = await fetch('https://audioforensics.tech/predict/', {
         method: 'POST',
         body: formData,
       })
