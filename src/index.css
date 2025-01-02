@@ -13,12 +13,15 @@
 html,
 body {
   max-width: 100vw;
+  
   overflow-x: hidden;
+  font-family: "Josefin Sans", serif;
 }
 
 body {
   color: #333;
-  background: #f0f0f0;
+  background: #fff;
+  line-height: 1.6;
 }
 
 a {

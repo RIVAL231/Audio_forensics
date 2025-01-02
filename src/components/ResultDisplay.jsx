@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import styles from './ResultDisplay.module.css'
-
+import successIcon from '../assets/success.svg'
 export default function ResultDisplay({ result }) {
   console.log('Result in component:', result); // Debug log
 
@@ -26,7 +26,8 @@ export default function ResultDisplay({ result }) {
 
         <div className={styles.row}>
           <strong>Status:</strong> 
-          <span>{result.status}</span>
+          <span>{result.status.charAt(0).toUpperCase()}{result.status.substring(1)}</span>
+          <span><img src={successIcon} style={{height:"20px"}}></img></span>
         </div>
 
         <div className={styles.row}>
@@ -36,9 +37,9 @@ export default function ResultDisplay({ result }) {
 
         {maxProbability > 0 && (
           <div className={styles.row}>
-            <strong>Highest Probability:</strong>
+            <strong>Confidence:</strong>
             <div className={styles.probList}>
-              <div>Class {maxIndex}: {maxProbability}%</div>
+              <div>{maxProbability}%</div>
             </div>
           </div>
         )}
