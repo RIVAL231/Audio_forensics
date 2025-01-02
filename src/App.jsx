@@ -15,7 +15,7 @@ export default function Home() {
     formData.append('file', file)
 
     try {
-      const response = await fetch('http://51.20.2.19/predict/', {
+      const response = await fetch('http://16.171.249.240/predict/', {
         method: 'POST',
         body: formData,
       })
