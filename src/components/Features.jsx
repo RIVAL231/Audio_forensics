@@ -1,12 +1,9 @@
 import React from 'react'
 import styles from './Features.module.css'
+import Footer from './Footer'
 
 export default function Features() {
   const features = [
-    {
-      title: 'AI-Powered Analysis',
-      description: 'Our advanced AI model accurately detects various types of audio forgeries.'
-    },
     {
       title: 'Fast Results',
       description: 'Get instant results on the authenticity of your audio files.'
@@ -14,10 +11,26 @@ export default function Features() {
     {
       title: 'Multiple Forgery Types',
       description: 'Detect speech synthesis, voice conversion, and replay attacks.'
+    },
+    {
+      title: 'User-Friendly Interface',
+      description: 'Easily upload and analyze audio files with our intuitive interface.'
+    },
+    {
+      title: 'Advanced AI Technology',
+      description: 'Leverage cutting-edge AI models trained on extensive datasets for accurate detection.'
+    },
+    {
+      title: 'Secure Processing',
+      description: 'Your data is processed securely and is never shared with third parties.'
+    },
+    {
+      title: 'Comprehensive Reports',
+      description: 'Receive detailed reports on the analysis of your audio files.'
     }
   ]
 
-  return (
+  return (<>
     <section id="features" className={styles.features}>
       <h2>Key Features</h2>
       <div className={styles.featureList}>
@@ -29,6 +42,7 @@ export default function Features() {
         ))}
       </div>
     </section>
+    
+    </>
   )
 }
-

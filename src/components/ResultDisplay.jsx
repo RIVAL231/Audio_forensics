@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import styles from './ResultDisplay.module.css'
 import successIcon from '../assets/success.svg'
+import Footer from './Footer';
 export default function ResultDisplay({ result }) {
   console.log('Result in component:', result); // Debug log
 
